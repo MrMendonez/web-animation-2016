@@ -1,0 +1,395 @@
+<html>
+    <head>
+        <title>Anushka's Blog</title>
+         <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            *
+            {
+             margin:0;
+             padding:0; 
+             
+            }
+            body
+           {
+                font-family:century gothic;
+                font-size:20px;
+                background-color:#d8f0f7;
+                background-image:url(http://static.tumblr.com/746eb1a8b709e3ae968d054994e698b2/n3xcaey/B0in182id/tumblr_static_floral.jpg);
+                /*https://docs.google.com/forms/d/1RzkNQsHy5_zTcwH_b64tbkRh119Q53ZBoHm2lQ89A_Q/viewanalytics?usp=form_confirm
+                background-image:url(http://data3.whicdn.com/images/27953579/thumb.jpg);*/
+                
+            }
+            #header 
+            {
+                background-color:#404040; 
+                height:100px; 
+                width:100%;
+            } 
+            .container
+            {
+                width:1160px;
+                height:auto;
+                margin:0 auto; 
+            } 
+            
+            #logoArea
+            { 
+                font-family:birch std;  
+                color:#f2f2f2;
+                background-image: url(); 
+                float:left;
+                position:absolute;
+                top:10px;
+            }
+            #navArea 
+            {
+                width:860px;
+                height:100px;
+                float:right;
+            } 
+            
+            #nav
+            {
+                list-style:none;  
+                margin-top:30px;
+            } 
+            #nav a
+            {
+                color:#f2f2f2;
+                text-decoration:none;
+            } 
+            #nav li 
+            {
+                float:left;  
+                margin-left:30px; 
+                background-color:#404040;
+                padding:8px;
+                border:1px solid gray;
+                border-radius:5px;
+                font-family:century gothic;
+                font-size:75%;
+            }
+            #nav li:hover  
+            {
+                background-color: #4c4c4c;
+                margin-left:30px; 
+                padding:8px;
+                border:1px solid gray;
+                border-radius:5px;
+                font-family:century gothic;
+                font-size:75%;
+                
+            }
+            /* #navArea2 
+            {
+                width:100px;
+                height:100%;
+                float:left;
+            }
+            
+            #nav2
+            {
+                list-style:none; 
+                margin-top:30px;
+                margin-left:20px;
+                margin-bottom:20px;
+            }
+            #nav2 a
+            {
+                color:#fae4e9;
+                text-decoration:none;
+            } 
+            #nav2 li 
+            {
+                float:left; 
+                margin-bottom:20px; 
+                margin-top:10px;
+                margin-left:20px;
+                background-color:black;
+                padding:8px;
+                border:1px solid silver;
+                border-radius:5px;
+                font-family:century gothic;
+                font-size:75%;
+            }
+            #nav2 li:hover  
+            {
+                background-color: #2a2a2a;
+                
+            }*/
+            
+        
+            .page
+            { 
+                
+                background-color:white;
+                padding:20px; 
+                height:100%;  
+                width:700px;
+                overflow:auto;
+                padding-bottom:1px;
+            }
+            
+            .textpg
+            {
+                text-align: center;
+            }
+            
+            #footer
+            {
+                
+                background-color:#404040;
+                height:45px;
+                width:100%;
+                color:#f2f2f2;
+                padding-top:20px; 
+            }
+            
+            p
+            {
+                margin-bottom:20px;
+            }
+            h1 
+            {
+                font-family:birch std;
+                font-size:70px; 
+            }
+            .title
+            {
+                font-family:century gothic;
+                font-size:125%;
+            }
+            .sidebar
+            {
+                height:100%;
+                width:200px; 
+                float:left;
+            }
+            #morebox
+            {
+                background-color:#404040;
+                padding:20px;
+                margin:20px;
+                width:250px;
+                position:absolute;
+                left:1215px;
+                top:200px;
+                border-radius:5px;
+            } 
+            
+            #morebox li
+            {
+                font-size:90%;
+            }
+            
+            #morebox p
+            {
+                color:#d3d3d3;
+                
+                font-size:55%;
+            }
+            
+            #morebox a
+            {
+                text-decoration:none;
+                color:#d3d3d3;
+            }
+            
+            #morebox a:hover
+            {
+                color:white;
+            }
+            
+            a
+            {
+                text-decoration:none;
+                color:gray;
+            }
+            
+
+            #pics img
+            {
+                border: 6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                float:right;
+                width:200px;
+                height:146px;
+            }
+            
+            #info
+            {
+               float:left;
+            }             
+            
+            #music li
+            { 
+                font-size:14px;
+                left:20px;
+               
+            }
+            #music
+            {
+                 float:left;
+            }
+            #tv
+            {
+                float:left;
+            }
+            #tv li
+            {
+                font-size:14px;
+            }
+            #pix img
+            {
+                border: 6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                float:right; 
+                width:90px; 
+                height:90px;
+                
+            }
+            #mainpics img
+            {
+                border: 6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                width:600px;
+                 
+            }
+            #bookpics img
+            {
+                border: 6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                float:right; 
+                width:105px;
+                height:160px;
+            }
+            #book img
+            {
+                border: 6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                 
+            }
+            #tvpics img
+            {
+                border:6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                float:right;
+                width:200px;
+                height:130px;
+            }
+            #fashion img
+            { 
+                border:6px solid #404040;
+                border-radius:5px;
+                margin:8px;
+                width:700px;
+                text-align:center;
+                
+                
+            }
+            #fashion
+            {
+                float:left;
+            }
+           #fashionpics
+           {
+               float:right;
+           }
+           #fashionpics img
+            {
+                border:6px solid #404040;
+                border-radius:5px;
+                margin:8px; 
+                text-align:center;
+                width:600px;
+            }
+            #book
+            {
+                float:left;
+            }
+           
+            img.center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #lastp
+            {
+                float:left;
+            }
+            
+            #lastp li
+            {
+                font-size:15px;
+            }
+            
+            #guitartext
+            {
+                font-size:15px;
+            }
+            #guitartext img
+            {
+                border:6px solid #404040;
+                border-radius:5px;
+                margin:8px; 
+                text-align:center;
+                width:600px; 
+            }
+            
+           
+            
+            
+        </style>
+    </head>
+    <body> 
+        
+        <div id="header">
+            <div class= "container">
+                <div id="logoArea">
+                    <h1 style="font-size:62px"><b>Anushka's Blog</b></h1>
+                </div>
+                <div id="navArea">
+                    <ul id="nav">
+                        <a href = "home.html"><li>Home</li></a>
+                        <a href = "contact.html"><li>Contact</li></a>
+                    </ul> 
+                </div>
+            </div>
+        
+        </div>    
+        </div>
+        <div id="mainArea"> 
+            <div class="container page">
+                
+                <div style="text-align:center">
+               <div class="title" style="font-size:30px">Welcome to my Web Site!</div> 
+         <br>
+               
+                 
+                 <img src="http://i1187.photobucket.com/albums/z394/elizaxkitty/tumblr_logqrz5jJY1qc3oi3o1_500.gif" width:"600px">
+                 
+                  
+                <p style="font-size:15px">My name is Anushka and this is my website. I am currently a student taking a Web Design class. Hopefully this website will allow people to get to know a little bit more about me.</p>
+                <p style="font-size:15px">Here you will be able to find some more information about my favorite things, such as music, tv, books and more. Enjoy!</p>
+                 <div id="mainpics">
+                <img src="http://41.media.tumblr.com/7eb7c74b219ae0a3012fea7f440ca3a8/tumblr_n8g7tka9aM1toba6to1_500.jpg">
+                
+                </div>
+                </div>
+            </div>
+           <div id="footer-bar"></div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/loadrepeateddivs.js"></script>
+    </body>
+</html>
+
+
+
