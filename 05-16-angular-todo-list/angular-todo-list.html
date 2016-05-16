@@ -27,6 +27,7 @@
             <button ng-click="todoList.remove()" class="btn">Delete</button>
           </div>
         </div>
+        <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
         <ul>
           <li ng-repeat="todo in todoList.todoItems">
             <p>

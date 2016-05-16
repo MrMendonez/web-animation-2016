@@ -16,7 +16,6 @@ angular.module("todoApp", [])
   };
 
   todoList.remove = function() {
-    console.log('remove function fired');
     var oldTodos = todoList.todoItems;
     todoList.todoItems = [];
     angular.forEach(oldTodos, function(todo) {
@@ -24,6 +23,15 @@ angular.module("todoApp", [])
     })
     todoList.todoItems
   };
+
+  todoList.remaining = function() {
+    var notCompletedCount = 0;
+    angular.forEach(todoList.TodoItems, function(todo) {
+      notCompletedCount += todo.done;
+    })
+
+    return notCompletedCount
+  }
 
 
 }); // end TodoListController
