@@ -6,6 +6,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
    <!-- Materialize Icons -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
    <!-- Angular.JS -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="js/app.js"></script>
@@ -18,19 +19,19 @@
         <h2>My To-Do List</h2>
         <div class="row">
           <div class="input-field col s6">
-            <form ng-submit="todoList.addTodo()">
+            <form id="add-form" ng-submit="todoList.addTodo()">
               <input ng-model="todoList.todoText" id="task" type="text" class="validate">
               <label class="active" for="task">Task</label>
               <button class="btn" type="submit"><i class="material-icons">add</i></button>
-              <button ng-click="todoList.remove()" class="btn">Delete</button>
             </form>
+            <button ng-click="todoList.remove()" class="btn">Delete</button>
           </div>
         </div>
         <ul>
           <li ng-repeat="todo in todoList.todoItems">
             <p>
               <input type="checkbox" ng-model="todo.done" id="todoItem-{{ $index }}" />
-              <label for="todoItem-{{ $index }}">{{ todo.name }}</label>
+              <label class="done-{{ todo.done }}" for="todoItem-{{ $index }}">{{ todo.name }}</label>
             </p>
           </li>
         </ul>
